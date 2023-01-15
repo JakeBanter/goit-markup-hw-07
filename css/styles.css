@@ -695,6 +695,7 @@ body {
   align-items: center;
 
   margin-bottom: 72px;
+  gap: 0 16px;
 }
 .item-social-footer {
   display: flex;
