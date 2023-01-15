@@ -123,7 +123,7 @@ body {
 
   .menu-toggle:hover,
   .menu-toggle:focus {
-    background-color:rgba(64,75,191, 0.3);
+    background-color: rgba(64, 75, 191, 0.3);
     border-radius: 50%;
   }
 }
@@ -313,14 +313,11 @@ body {
     background-color: rgba(46, 47, 66, 0.7);
   }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-container {
       background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/people-office-mobile@2.jpg');
+        url('../images/people-office-mobile@2.jpg');
     }
-
   }
 
   .hero-text {
@@ -375,14 +372,11 @@ body {
       url('../images/people-office-tablet@1.png');
   }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-container {
       background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/people-office-tablet@2.png');
+        url('../images/people-office-tablet@2.png');
     }
-
   }
 
   .hero-text {
@@ -407,13 +401,12 @@ body {
     display: flex;
     flex-wrap: wrap;
 
-    gap: 72px 24px
+    gap: 72px 24px;
   }
 
   .cards.advantages > li {
     flex-basis: calc(100% / 2 - 12px);
   }
-
 }
 
 /* =================TEAM======================== */
@@ -538,19 +531,15 @@ body {
     flex-wrap: wrap;
 
     gap: 64px 24px;
-
   }
 
   .cards li.team-card {
     flex-basis: 264px;
-
   }
 
   .team-subscription-item {
     padding: 32px 16px;
   }
-
-
 }
 
 /* ================================CUSTOMERS========================== */
@@ -624,7 +613,6 @@ body {
 
 @media (min-width: 429px) and (max-width: 1199px) {
   .container-customers {
-
     padding: 96px 0;
   }
 
@@ -636,7 +624,6 @@ body {
     max-width: 740px;
 
     gap: 74px 24px;
-
   }
 
   .item-customer {
@@ -735,8 +722,8 @@ body {
   background-color: #31d0aa;
 }
 
-.item-social-footer:not(:first-child) {
-  margin-left: 16px;
+.item-social-footer {
+  gap: 0 16px;
 }
 
 .svg-social-media-footer {
@@ -1250,7 +1237,6 @@ body {
   text-decoration: none;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .link-mobile-menu:active,
@@ -1287,7 +1273,6 @@ body {
   color: #434455;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .phone-mobile-menu {
@@ -1298,13 +1283,11 @@ body {
   color: #434455;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .mail-mobile-menu:hover,
 .phone-mobile-menu:hover {
   color: #4d5ae5;
-
 }
 
 .list-social-mobile-menu {
@@ -1329,11 +1312,10 @@ body {
   border-radius: 50%;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .link-item-social-mobile-menu:hover {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 .svg-social-media-mobile-menu {
@@ -1560,14 +1542,11 @@ body {
     padding-bottom: 192px;
   }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-container {
       background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/people-office-desktop@2.jpg');
+        url('../images/people-office-desktop@2.jpg');
     }
-
   }
 
   .hero-section {
@@ -1907,6 +1886,10 @@ body {
   }
 
   /* ===========FOOTER============== */
+
+  .wraper-footer-1 {
+    display: flex;
+  }
 
   .footer {
     background-color: #2e2f42;
