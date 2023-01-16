@@ -1177,6 +1177,19 @@ body {
   fill: currentColor;
 }
 @media (max-width: 428px) {
+.modal {
+  width: 392px;
+  padding: 72px 16px 24px;
+}
+
+.input-modal {
+  width: 360px;
+}
+
+.textarea-modal {
+  width: 360px;
+}
+
 }
 
 /* ==================================mobile menu======================================= */
@@ -1222,7 +1235,11 @@ body {
 }
 
 .mobile-menu {
-  padding: 80px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 80px 40px 40px;
+  height: 100vh;
 }
 
 .link-mobile-menu {
@@ -1255,7 +1272,7 @@ body {
 }
 
 .list-contacts-mobile-menu {
-  margin-top: 284px;
+  margin-top: auto;
 }
 
 .item-contacts-mobile-menu {
@@ -1298,7 +1315,6 @@ body {
 
   margin-top: 48px;
 
-  padding-right: 60px;
 }
 
 .link-item-social-mobile-menu {
