@@ -91,7 +91,7 @@ body {
   color: var(--contacts-text-hover-color);
 }
 
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .container.header {
     /* position: relative; */
     display: flex;
@@ -103,6 +103,9 @@ body {
     min-width: 320px;
 
     padding: 0 16px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .list-nav {
@@ -128,7 +131,7 @@ body {
   }
 }
 
-@media (min-width: 429px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -203,7 +206,6 @@ body {
 
   .contacts {
     display: block;
-    margin-top: 4px;
   }
 
   li:first-child .contacts {
@@ -220,6 +222,19 @@ body {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
+  }
+  .list-contacts > li:first-child a {
+    padding-top: 17px;
+  }
+
+  .list-contacts > li:last-child a {
+    padding-bottom: 17px;
+  }
+
+  .list-contacts > li:first-child {
+    
+    margin-bottom: 4px;
+
   }
 }
 
@@ -271,9 +286,10 @@ body {
   display: none;
 }
 
-.item-heading-advantages {
+.item-heading.item-heading-advantages {
   display: block;
   margin-bottom: 8px;
+  text-align: left;
 
   font-weight: 700;
   font-size: 36px;
@@ -296,7 +312,15 @@ body {
   display: none;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 767px) {
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 320px;
+  max-width: 428px;
+}
+
   .hero-container {
     min-width: 320px;
     max-width: 428px;
@@ -304,6 +328,9 @@ body {
 
     padding-top: 112px;
     padding-bottom: 112px;
+
+    margin-left: auto;
+    margin-right: auto;
 
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/people-office-mobile@1.jpg');
@@ -333,9 +360,9 @@ body {
     margin-top: 72px;
   }
 
-  .container-advantages {
+  .section-advantages {
     min-width: 320px;
-    padding: 96px 16px;
+    padding: 96px 0;
   }
 
   .item-heading-advantages {
@@ -362,7 +389,7 @@ body {
   background-color: #404bbf;
 }
 
-@media (min-width: 429px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .hero-container {
     max-width: 768px;
     height: 436px;
@@ -380,7 +407,7 @@ body {
   }
 
   .hero-text {
-    width: 495px;
+    width: 497px;
 
     margin-left: auto;
     margin-right: auto;
@@ -393,8 +420,12 @@ body {
     margin-top: 40px;
   }
 
+  .section-advantages {
+    padding: 96px 0;
+  }
+
   .container-advantages {
-    padding: 96px 16px;
+    padding: 0 16px;
   }
 
   .container-advantages .cards {
@@ -411,7 +442,7 @@ body {
 
 /* =================TEAM======================== */
 
-.container-section-team {
+.section-team {
   background-color: #f4f4fd;
 }
 
@@ -494,8 +525,8 @@ body {
   padding: 32px 14px;
 }
 
-@media (max-width: 428px) {
-  .container-section-team {
+@media (max-width: 767px) {
+  .section-team {
     padding: 96px 0 128px;
   }
 
@@ -519,8 +550,8 @@ body {
   }
 }
 
-@media (min-width: 429px) and (max-width: 1199px) {
-  .container-section-team {
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-team {
     padding: 96px 0 104px 0;
   }
 
@@ -563,11 +594,11 @@ body {
   fill: currentColor;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 767px) {
   .container-customers {
     min-width: 320px;
     max-width: 428px;
-    padding: 96px 16px;
+    padding: 0 16px;
   }
 
   .list-customers {
@@ -611,7 +642,7 @@ body {
   }
 }
 
-@media (min-width: 429px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .container-customers {
     padding: 96px 0;
   }
@@ -621,7 +652,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 
-    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 552px;
 
     gap: 74px 24px;
   }
@@ -652,7 +686,7 @@ body {
 
 /* ===================FOOTER================================ */
 
-.container-footer {
+.footer {
   background-color: #2e2f42;
 }
 
@@ -802,12 +836,16 @@ body {
   margin-left: 16px;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 767px) {
+.section-padding {
+  padding: 96px 0;
+}
+
   .container-footer {
     min-width: 320px;
     max-width: 428px;
     background-color: #2e2f42;
-    padding: 96px 16px;
+    padding: 0 16px;
   }
 
   .logo-studio-footer {
@@ -839,10 +877,9 @@ body {
   }
 
   .subscribe-input {
-    min-width: 320px;
     width: 100%;
 
-    margin: 0 auto 16px;
+    margin-bottom: 16px;
   }
 
   .subscribe-button {
@@ -850,15 +887,22 @@ body {
   }
 }
 
-@media (min-width: 429px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .container-footer {
     padding-top: 96px;
     padding-bottom: 96px;
-    padding-left: calc(14%);
   }
   .wraper-footer-1 {
     display: flex;
     justify-content: flex-start;
+
+    padding-left: calc(14.0625%);
+
+    margin-bottom: 72px;
+  }
+
+  .subscribe-container {
+    padding-left: calc(14.0625%);
   }
 
   .wraper-footer-1 .footer-logo-container {
@@ -866,12 +910,17 @@ body {
     width: 264px;
     margin-right: 24px;
   }
+
   .logo-studio-footer {
     display: block;
     margin-bottom: 16px;
   }
   .footer-text {
     display: block;
+  }
+
+  .list-social-footer {
+    margin-bottom: 0;
   }
 
   .footer-social-media-container {
@@ -1176,20 +1225,22 @@ body {
 
   fill: currentColor;
 }
-@media (max-width: 428px) {
-.modal {
-  width: 392px;
-  padding: 72px 16px 24px;
-}
+@media (max-width: 767px) {
+  .modal {
+    min-width: 320px;
+    max-width: 100%;
+    width: 392px;
+    height: auto;
+    padding: 72px 16px 24px;
+  }
 
-.input-modal {
-  width: 360px;
-}
+  .input-modal {
+    width: 100%;
+  }
 
-.textarea-modal {
-  width: 360px;
-}
-
+  .textarea-modal {
+    width: 100%;
+  }
 }
 
 /* ==================================mobile menu======================================= */
@@ -1204,7 +1255,7 @@ body {
   outline: none;
 }
 
-@media (min-width: 429px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .menu-toggle {
     display: none;
   }
@@ -1314,7 +1365,6 @@ body {
   align-items: center;
 
   margin-top: 48px;
-
 }
 
 .link-item-social-mobile-menu {
@@ -1625,6 +1675,10 @@ body {
     margin-right: 24px;
   }
 
+  .list.cards.advantages > li {
+    width: 264px;
+  }
+
   .list.cards {
     display: flex;
   }
@@ -1638,15 +1692,13 @@ body {
     color: #2e2f42;
   }
 
-  .item-heading-advantages {
-    margin-top: 8px;
-  }
-
   .svg-advantages-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 112px;
+
+    margin-bottom: 8px;
 
     background: #f4f4fd;
     border-radius: 4px;
@@ -1667,6 +1719,7 @@ body {
   }
 
   .item-heading {
+    text-align: left;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -1687,19 +1740,25 @@ body {
 
   /* ===============================Team============================ */
 
+  .team-subscription-item > .item-heading {
+    text-align: center;
+  }
+
   .team-subscription-item {
     padding: 32px 16px;
     text-align: center;
   }
 
   .subscription {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 8px;
   }
 
   .section-team {
+    margin-top: 8px;
+
     background-color: #f4f4fd;
   }
 
@@ -1711,7 +1770,6 @@ body {
   }
 
   .list-social-team {
-    margin-top: 12px;
     gap: 24px;
     justify-content: center;
   }
@@ -1746,7 +1804,7 @@ body {
 
   .link-social-team:hover,
   .link-social-team:focus {
-    background-color: #404bbf;
+    background-color: #31d0aa;
   }
 
   /* ================================Page products(Portfolio)===================== */
@@ -1942,13 +2000,16 @@ body {
     letter-spacing: 0.02em;
     color: #ffffff;
     text-transform: initial;
+
+    margin-bottom: 16px;
   }
 
   .list-social-footer {
     display: flex;
     justify-content: center;
 
-    margin-top: 16px;
+    margin-bottom: 0;
+
     gap: 16px;
   }
 
@@ -1988,7 +2049,7 @@ body {
 
   .subscribe-container {
     display: block;
-    margin-left: 80px;
+    margin-left: auto;
   }
 
   .phrase-subscribe {
